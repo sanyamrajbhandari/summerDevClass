@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css units</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            height:100vh;
+            background-color: red;
+            font-size: 10px;
+        }
+        .pixel{
+            width:100px;
+            background-color: aquamarine;
+        }
+
+        .percentage{
+            width:100%;
+            background-color:aqua;
+            border:1px solid #000000;
+            
+        }
+        
+        .viewportWidth{
+            width:100vw;
+            border: 1px solid #000;
+            background-color: aquamarine;
+        }
+
+        .viewportHeight{
+            height:100vh;
+            border: 1px solid #000;
+            background-color: aquamarine;
+        }
+
+        .rem{font-size: 1rem;}
+        .em{font-size:1em}
+
+        
+    </style>
+</head>
+<body>
+    <div class="pixel">pixel</div>
+    <div class="percentage">%</div>
+    <div class="viewportWidth">vw</div>
+    <div class="viewportHeight">vh</div>
+    <div class="rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, hic?</div>
+    <div class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, hic?</div>
+
+</body>
+</html>

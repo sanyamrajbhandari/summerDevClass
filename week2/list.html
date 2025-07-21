@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List - College</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="profileSection">
+      <div class="profileName">Sanyam</div>
+    </div>
+    <div class="sidebarMenu">
+      <div class="workspaceMenu">
+        <p>Workspaces +</p>
+      </div>
+      <div class="menuItem selected">College</div>
+      <div class="menuItem">Personal</div>
+      <div class="filterSection">
+        <p>Filter by</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainContent">
+    <div class="headerSection">
+      <h1>Welcome back, Sanyam</h1>
+      <div class="subHeader">College <span>&lt; &gt; ℹ️</span></div>
+    </div>
+
+    <div class="taskSectionsContainer">
+      <div class="taskSection">
+        <h2> Eat the frog <button class="addBtn">Add</button></h2>
+        <div class="taskItem">
+          <input type="checkbox" id="eatFrogTask1" />
+          <label for="eatFrogTask1">Complete and submit portfolio</label>
+          <span class="dueTime">Due in 5 hours</span>
+          <button class="editBtn">Edit</button>
+          <button class="deleteBtn">Delete</button>
+        </div>
+
+        <h2>📋 Tasks to do <button class="addBtn">Add</button></h2>
+        <div class="taskItem">
+          <input type="checkbox" id="todoTask1" />
+          <label for="todoTask1">Complete and submit portfolio</label>
+          <span class="dueTime">Due in 2 Days</span>
+          <span class="criticalTag">Critical</span>
+          <button class="editBtn">Edit</button>
+          <button class="deleteBtn">Delete</button>
+        </div>
+
+        <h2>✔️ Completed <button class="deleteAllBtn">Delete all</button></h2>
+        <div class="taskItem completed">
+          <input type="checkbox" id="completedTask1" checked />
+          <label for="completedTask1"><s>Start the design of To-do list</s></label>
+          <button class="deleteBtn">Delete</button>
+        </div>
+      </div>
+
+      <div class="taskSection">
+        <h2>📅 Daily Tasks <button class="addBtn">Add</button></h2>
+        <div class="taskItem">
+          <input type="checkbox" id="dailyTask1" />
+          <label for="dailyTask1">Learn react for an hour</label>
+          <span class="dueTime">Due in 5 hours</span>
+          <button class="editBtn">Edit</button>
+          <button class="deleteBtn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

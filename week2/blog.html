@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=My+Soul&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "My Soul", cursive;
+      }
+      :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+        --text-color: #de3163;
+        --padding: 10px;
+      }
+      body {
+        background-color: var(--primary-color);
+      }
+      h1 {
+        text-align: center;
+        color: var(--text-color);
+      }
+      h2 {
+        color: var(--text-color);
+        text-align: center;
+        padding: var(--padding);
+        margin: var(--padding);
+      }
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .image {
+        width: 50%;
+        height: 500px;
+        display: block;
+        margin: 100px auto;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+      }
+      .paragraph {
+        width: 50%;
+        margin: 100px auto;
+      }
+      p {
+        color: var(--secondary-color);
+        padding: var(--padding);
+        margin: var(--padding);
+        text-align: justify;
+      }
+
+      @media (max-width: 1024px) and (min-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .paragraph {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .paragraph {
+          margin-top: 0;
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog post</h1>
+    <div class="container">
+      <div class="image">
+        <img src="barista.jpg" alt="barista" />
+      </div>
+      <div class="paragraph">
+        <h2>Barista: The Art and Skill Behind Every Cup</h2>
+        <p>
+          A barista is more than justsomeone who makes coffee. In today’s coffee
+          culture, a barista is a skilled professional who brings together the
+          science of brewing and the art of hospitality. They are responsible
+          for preparing and serving espresso-based beverages such as lattes,
+          cappuccinos, flat whites, macchiatos, mochas, and more. Behind the
+          counter, a good barista performs multiple roles: technician, artist,
+          customer service expert, and often, even a therapist to regular
+          customers. The primary role of a barista is to operate an espresso
+          machine efficiently and consistently. This includes grinding coffee
+          beans, pulling perfect espresso shots, steaming milk to the correct
+          texture and temperature, and assembling drinks with precision. Each
+          step demands attention to detail. Even a few seconds’ difference in
+          extraction time or a small mistake in milk frothing can significantly
+          impact the taste and quality of the beverage. In addition to technical
+          skills, a barista must have a strong understanding of coffee origins,
+          roasting levels, flavor profiles, and grind sizes. They often need to
+          adjust brewing parameters based on the freshness of the beans or
+          environmental conditions such as humidity. This knowledge allows them
+          to troubleshoot and make adjustments on the fly to maintain consistent
+          quality. However, a barista’s job isn’t just about the coffee—it’s
+          also about people. In many cafés, baristas are the first point of
+          contact with customers. They take orders, answer questions, offer
+          suggestions, and engage in friendly conversations. A great barista
+          remembers regular customers’ names and their favorite drinks, creating
+          a personal and welcoming atmosphere that makes people want to return.
+          Their ability to multitask, stay calm under pressure, and provide fast
+          and friendly service is vital to the smooth operation of a busy café.
+          Another important aspect of the barista profession is latte art, the
+          creative presentation of coffee drinks using frothed milk. With a
+          skilled hand and eye, baristas can create hearts, rosettas, tulips,
+          swans, and other beautiful designs on the surface of the coffee.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
